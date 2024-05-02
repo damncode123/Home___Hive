@@ -39,9 +39,9 @@ app.use("/Home-Hive/users",UserRoutes);
 // Mongoose Setup
 const PORT = process.env.PORT || 3000;
 
-const main = async () => {
+const main = () => {
   try {
-    await mongoose.connect(process.env.MONGO_DB, {
+    mongoose.connect(process.env.MONGO_DB, {
       dbName:"Home-Hive",
       // Remove deprecated options and add retryWrites and w options
       useNewUrlparser: true,
