@@ -7,21 +7,21 @@ import UserRoutes from "./routes/user.route.js"
 import mongoose from "mongoose";
 import cors from "cors";
 
-import { fileURLToPath } from 'url';
-import { dirname, join } from 'path';
+// import { fileURLToPath } from 'url';
+// import { dirname, join } from 'path';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = dirname(__filename);
+// const __filename = fileURLToPath(import.meta.url);
+// const __dirname = dirname(__filename);
 
 dotenv.config({ path: "./.env" });
 
 const app = express();
 
-app.use(express.static(join(__dirname, '../client/build')));
+// app.use(express.static(join(__dirname, '../client/build')));
 
-app.use((req, res, next) => {
-  res.sendFile(join(__dirname, '../client/build', 'index.html'));
-});
+// app.use((req, res, next) => {
+//   res.sendFile(join(__dirname, '../client/build', 'index.html'));
+// });
 
 // Middleware
 app.use(cors());

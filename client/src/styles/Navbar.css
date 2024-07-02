@@ -16,14 +16,13 @@
     cursor: pointer;
 }
 .navbar_search {
-    border: 1px solid #bdb9b9;
+    border: 1px solid #f8f6f6;
     border-radius: 30px;
     height: 50px;
     padding: 0px 20px;
     display: flex;
     gap: 40px;
     align-items: center;
-    background-color: #f8f6f6;
 }
 .navbar_search input {
     border: none;
