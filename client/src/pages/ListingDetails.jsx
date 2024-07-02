@@ -20,7 +20,7 @@ const ListingDetails = () => {
     const getListingDetails = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/Home-Hive/properties/${listingId}`,
+          `https://home-hive-1.onrender.com/Home-Hive/properties/${listingId}`,
           {
             method: "GET",
           }
@@ -69,7 +69,7 @@ const ListingDetails = () => {
       };
 
       const response = await fetch(
-        "http://localhost:5000/Home-Hive/bookings/create",
+        "https://home-hive-1.onrender.com/Home-Hive/bookings/create",
         {
           method: "POST",
           headers: {
@@ -109,7 +109,7 @@ const ListingDetails = () => {
             <div className="photos">
               {listing.listingPhotoPaths?.map((item) => (
                 <img
-                  src={`http://localhost:5000/${item.replace("public", "")}`}
+                  src={`https://home-hive-1.onrender.com/${item.replace("public", "")}`}
                   alt="listing photo"
                 />
               ))}
@@ -125,7 +125,7 @@ const ListingDetails = () => {
   
             <div className="profile">
               <img
-                src={`http://localhost:5000/${listing.creator.profileImagePath.replace(
+                src={`https://home-hive-1.onrender.com/${listing.creator.profileImagePath.replace(
                   "public",
                   ""
                 )}`}

@@ -18,7 +18,7 @@ const CategoryPage = () => {
     const getFeedListings = async () => {
       try {
         const response = await fetch(
-            `http://localhost:5000/Home-Hive/properties?category=${category}`,
+            `https://home-hive-1.onrender.com/Home-Hive/properties?category=${category}`,
           {
             method: "GET",
           }

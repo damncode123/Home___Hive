@@ -18,7 +18,7 @@ const SearchPage = () => {
   const getSearchListings = async () => {
     try {
       const response = await fetch(
-        `http://localhost:5000/Home-Hive/properties/search/${search}`, {
+        `https://home-hive-1.onrender.com/Home-Hive/properties/search/${search}`, {
         method: "GET"
       })
 

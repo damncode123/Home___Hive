@@ -16,7 +16,7 @@ const PropertyList = () => {
     const dispatch = useDispatch()
     const getPropertyList = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/Home-Hive/users/${user._id}/properties`, {
+        const response = await fetch(`https://home-hive-1.onrender.com/Home-Hive/users/${user._id}/properties`, {
           method: "GET"
         })
         const data = await response.json()

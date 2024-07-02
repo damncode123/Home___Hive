@@ -34,7 +34,7 @@ const RegisterPage = () => {
         register_form.append(key, formData[key])
       }
 
-      const response = await fetch("http://localhost:5000/Home-Hive/auth/register", {
+      const response = await fetch("https://home-hive-1.onrender.com/Home-Hive/auth/register", {
         method: "POST",
         body: register_form
       })

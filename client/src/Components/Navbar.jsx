@@ -56,7 +56,7 @@ const Navbar = () => {
           ) : (
             // fetching image from the  backend using api. and we are changing public/uploads to ""/upload so it can easily access it.
             <img
-              src={`http://localhost:5000/${user.profileImagePath.replace(
+              src={`https://home-hive-1.onrender.com/${user.profileImagePath.replace(
                 "public",
                 ""
               )}`}

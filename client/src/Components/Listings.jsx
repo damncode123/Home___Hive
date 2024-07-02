@@ -20,8 +20,8 @@ const Listings = () => {
     try {
       const response = await fetch(
         selectedCategory !== "All"
-          ? `http://localhost:5000/Home-Hive/properties?category=${selectedCategory}`
-          : "http://localhost:5000/Home-Hive/properties",
+          ? `https://home-hive-1.onrender.com/Home-Hive/properties?category=${selectedCategory}`
+          : "https://home-hive-1.onrender.com/Home-Hive/properties",
         {
           method: "GET",
         }

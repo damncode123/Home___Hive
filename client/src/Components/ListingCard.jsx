@@ -53,7 +53,7 @@ const ListingCard = ({
     //  To avoid the like of the owner of the property itself.
      if (user?._id !== creator._id) {
      const response = await fetch(
-       `http://localhost:5000/Home-Hive/users/${user?._id}/${listingId}`,
+       `https://home-hive-1.onrender.com/Home-Hive/users/${user?._id}/${listingId}`,
        {
          method: "PATCH",
          header: {
@@ -81,7 +81,7 @@ const ListingCard = ({
            {listingPhotoPaths?.map((photo, index) => (
              <div key={index} className="slide">
                <img
-                 src={`http://localhost:5000/${photo?.replace("public", "")}`}
+                 src={`https://home-hive-1.onrender.com/${photo?.replace("public", "")}`}
                  alt={`photo ${index + 1}`}
                />
                <div
